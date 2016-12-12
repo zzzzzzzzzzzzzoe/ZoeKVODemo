@@ -6,6 +6,6 @@
 
 
 > 这篇文写的很好推荐一下[iOS-手动实现KVO](http://www.jianshu.com/p/bf053a28accb)
-
+## KVO(Key-Value Observing, 键值观察)
 
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
