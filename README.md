@@ -22,15 +22,15 @@
 ###实现思路
 
 
--判断监听方法属性是否存在
+- 判断监听方法属性是否存在
 
 
--添加继承原本类的新类，并将isa指向新类
+- 添加继承原本类的新类，并将isa指向新类
 
 
--给新类添加setter方法
+- 给新类添加setter方法
 
 
--创建观察者info
+- 创建观察者info
 
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
