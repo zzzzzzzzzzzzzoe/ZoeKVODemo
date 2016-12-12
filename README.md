@@ -23,7 +23,14 @@
 
 
 - 判断监听方法属性是否存在
-
+```
+SEL setterSelector = NSSelectorFromString([self getSetterName:key]);
+    Method setterMethod = class_getInstanceMethod([self class], setterSelector);
+    if (!setterMethod) {
+        NSLog(@"--------------未有此方法---------------");
+        return;
+    }
+```
 
 - 添加继承原本类的新类，并将isa指向新类
 
