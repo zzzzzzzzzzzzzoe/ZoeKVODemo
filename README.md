@@ -53,4 +53,10 @@ SEL setterSelector = NSSelectorFromString([self getSetterName:key]);
 ZoeKVOInfo * info = [[ZoeKVOInfo alloc]initWithObserver:observer withkey:key AndBlock:block];
     [observerInfoArray addObject:info];
 ```
+###怎么用
+
+- #import "NSObject+Zoe_KVO.h"
+
+- - (void)ZoeKVO_addObserver:(id)observer withkey:(NSString *)key AndBlock:(ZoeObserveBlock)block
+
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
