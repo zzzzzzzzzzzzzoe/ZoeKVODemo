@@ -59,4 +59,7 @@ ZoeKVOInfo * info = [[ZoeKVOInfo alloc]initWithObserver:observer withkey:key And
 
 - `- (void)ZoeKVO_addObserver:(id)observer withkey:(NSString *)key AndBlock:(ZoeObserveBlock)block`
 
+- `- (void)ZoeKVO_removeObserver:(id)observer key:(NSString *)key`
+
+
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
