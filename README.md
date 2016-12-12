@@ -33,11 +33,25 @@ SEL setterSelector = NSSelectorFromString([self getSetterName:key]);
 ```
 
 - 添加继承原本类的新类，并将isa指向新类
+```
+ Class myClass = object_getClass(self);
+    NSString *className = NSStringFromClass(myClass);
+    if (![className hasPrefix:ZOEKVOString]) {
+        myClass = [self getKOVClass:className];
+        object_setClass(self, myClass);
+    }
 
+```
 
 - 给新类添加setter方法
+```
+    class_addMethod(myClass, setterSelector, (IMP)getSetFunc, method_getTypeEncoding(setterMethod));
 
+```
 
 - 创建观察者info
-
+```
+ZoeKVOInfo * info = [[ZoeKVOInfo alloc]initWithObserver:observer withkey:key AndBlock:block];
+    [observerInfoArray addObject:info];
+```
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
