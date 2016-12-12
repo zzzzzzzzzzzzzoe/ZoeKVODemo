@@ -15,6 +15,7 @@
 		044DEABB1DFD335B00E76715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DEAB91DFD335B00E76715 /* LaunchScreen.storyboard */; };
 		044DEAC61DFD335B00E76715 /* ZoeKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DEAC51DFD335B00E76715 /* ZoeKVOTests.m */; };
 		044DEAD11DFD335B00E76715 /* ZoeKVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DEAD01DFD335B00E76715 /* ZoeKVOUITests.m */; };
+		044DEAE11DFD33BF00E76715 /* NSObject+Zoe_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DEAE01DFD33BF00E76715 /* NSObject+Zoe_KVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		044DEACC1DFD335B00E76715 /* ZoeKVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoeKVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044DEAD01DFD335B00E76715 /* ZoeKVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoeKVOUITests.m; sourceTree = "<group>"; };
 		044DEAD21DFD335B00E76715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044DEADF1DFD33BF00E76715 /* NSObject+Zoe_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Zoe_KVO.h"; sourceTree = "<group>"; };
+		044DEAE01DFD33BF00E76715 /* NSObject+Zoe_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Zoe_KVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		044DEAAA1DFD335B00E76715 /* ZoeKVO */ = {
 			isa = PBXGroup;
 			children = (
+				044DEADE1DFD338000E76715 /* zoe_KVO */,
 				044DEAAE1DFD335B00E76715 /* AppDelegate.h */,
 				044DEAAF1DFD335B00E76715 /* AppDelegate.m */,
 				044DEAB11DFD335B00E76715 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				044DEAD21DFD335B00E76715 /* Info.plist */,
 			);
 			path = ZoeKVOUITests;
+			sourceTree = "<group>";
+		};
+		044DEADE1DFD338000E76715 /* zoe_KVO */ = {
+			isa = PBXGroup;
+			children = (
+				044DEADF1DFD33BF00E76715 /* NSObject+Zoe_KVO.h */,
+				044DEAE01DFD33BF00E76715 /* NSObject+Zoe_KVO.m */,
+			);
+			name = zoe_KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044DEAB31DFD335B00E76715 /* ViewController.m in Sources */,
+				044DEAE11DFD33BF00E76715 /* NSObject+Zoe_KVO.m in Sources */,
 				044DEAB01DFD335B00E76715 /* AppDelegate.m in Sources */,
 				044DEAAD1DFD335B00E76715 /* main.m in Sources */,
 			);
