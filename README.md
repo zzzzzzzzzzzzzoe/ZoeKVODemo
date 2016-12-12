@@ -8,5 +8,6 @@
 
 
 ## KVO(Key-Value Observing, 键值观察)
-
+###KVO原理
+>当你对一个对象进行观察时, 系统会动态创建一个类继承自原类, 然后重写被观察属性的setter方法. 然后重写的setter方法会负责在调用原setter方法前后通知观察者. KVO还会修改原对象的isa指针指向这个新类.
 ![](https://github.com/zzzzzzzzzzzzzoe/ZoeKVODemo/blob/master/gifFile/kvo.gif)
